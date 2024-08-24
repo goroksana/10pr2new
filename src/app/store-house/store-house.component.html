@@ -1,0 +1,10 @@
+<div class="applis-container">
+  <div class="applis-item" *ngFor="let appli of applis">
+    <h2 class="applis-name">{{ appli.name | uppercase }}</h2>
+    <p class="applis-category">Категорія: {{ appli.category }}</p>
+    <p class="applis-manufacture">Виробник: {{ appli.manufacture }}</p>
+    <img class="applis-image" [src]="appli.image" alt="{{ appli.name }}">
+    <p class="applis-price">Ціна: {{ appli.price }} грн</p>
+    <p class="applis-discount">Знижка: {{ appli.discount }}%</p>
+  </div>
+</div>
