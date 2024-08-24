@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AppliancesService } from '../appliances.service';
+import { CommonModule } from '@angular/common'; // Імпорт CommonModule
 
 @Component({
   selector: 'app-store-house',
   standalone: true,
-  imports: [],
+  imports: [CommonModule], // Додати CommonModule до імпортів
   templateUrl: './store-house.component.html',
   styleUrls: ['./store-house.component.css']
 })
